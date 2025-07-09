@@ -1,0 +1,10 @@
+std_msgs/Header header
+
+uint8 localization_algo_id
+
+string config_file
+string save_vis_path
+string save_seg_path
+---
+bool success
+string message

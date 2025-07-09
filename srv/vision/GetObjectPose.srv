@@ -1,0 +1,33 @@
+std_msgs/Header header
+
+uint8 localization_algo_id
+int64 target_object_id
+int64[] candidate_objects_ids
+
+uint8 BIN_450_330_220 = 0
+uint8 BIN_410_305_150 = 1
+uint8 BIN_410_305_150_WITH_BAFFLE = 2
+uint8 bin_type
+
+sensor_msgs/PointCloud2 pointcloud
+sensor_msgs/Image image
+
+uint16 img_width
+uint16 img_height
+uint16 img_channel
+uint64 img_shm_key
+int64  img_shm_id
+
+uint64 pointcloud_n
+uint64 pointcloud_shm_key
+int64  pointcloud_shm_id
+
+bool detect_bin_direction_flag
+bool detect_object_type_flag
+---
+bool success
+string message
+
+ObjectPose[] object_poses
+bool rotate_bin_direction_flag
+

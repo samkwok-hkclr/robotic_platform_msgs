@@ -1,0 +1,9 @@
+uint32 order_id
+
+uint32[] target_sku_id
+---
+ReplenishQuantity[] info
+---
+bool running
+
+uint8 state

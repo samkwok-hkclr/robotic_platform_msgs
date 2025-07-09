@@ -1,0 +1,17 @@
+std_msgs/Header header
+
+uint8 camera_id
+
+uint8 localization_algo_id
+int64 target_object_id
+int64[] candidate_objects_ids
+
+bool detect_bin_direction_flag
+bool detect_object_type_flag
+---
+bool success
+string message
+
+ObjectPose[] object_poses
+bool rotate_bin_direction_flag
+

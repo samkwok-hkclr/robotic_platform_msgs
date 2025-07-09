@@ -1,0 +1,8 @@
+std_msgs/Header header
+
+uint8 pose_idx
+
+bool pick_result
+---
+bool success
+string message

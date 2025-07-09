@@ -1,0 +1,23 @@
+std_msgs/Header header
+
+int64 target_object_id
+
+sensor_msgs/PointCloud2 pointcloud
+sensor_msgs/Image image
+
+uint16 img_width
+uint16 img_height
+uint16 img_channel
+uint64 img_shm_key
+int64  img_shm_id
+
+uint64 pointcloud_n
+uint64 pointcloud_shm_key
+int64  pointcloud_shm_id
+---
+bool success
+string message
+
+uint64 remain_qty
+bool turn_over_detected
+

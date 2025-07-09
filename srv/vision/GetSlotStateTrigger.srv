@@ -1,0 +1,13 @@
+std_msgs/Header header
+
+uint8 camera_id
+
+int64 target_object_id
+
+---
+bool success
+string message
+
+uint32 remain_qty
+bool turn_over_detected
+

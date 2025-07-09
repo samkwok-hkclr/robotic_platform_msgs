@@ -1,0 +1,1 @@
+Action files should be placed exclusively in the "action" folder.
