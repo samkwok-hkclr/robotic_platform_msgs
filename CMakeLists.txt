@@ -21,6 +21,7 @@ set(action_files
 set(manipulation_msg_files
   "msg/manipulation/ReplenishPose.msg"
   "msg/manipulation/ReplenishQuantity.msg"
+  "msg/manipulation/RobotStatus.msg"
 )
 
 set(manipulation_srv_files
@@ -47,7 +48,7 @@ set(vision_srv_files
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
-  
+
   ${manipulation_msg_files}
   ${manipulation_srv_files}
 

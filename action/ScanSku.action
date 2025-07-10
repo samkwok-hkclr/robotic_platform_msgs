@@ -1,6 +1,8 @@
 uint32 order_id
 
 uint32[] target_sku_id
+
+uint8 camera_id
 ---
 ReplenishQuantity[] info
 ---
