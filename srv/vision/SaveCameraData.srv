@@ -3,7 +3,6 @@ builtin_interfaces/Time target_time
 uint8 camera_id
 
 uint8 type
-# type={1: image, 2: pointcloud, 3: both???}
 ---
 bool success
 string message

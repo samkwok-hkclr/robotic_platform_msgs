@@ -1,0 +1,6 @@
+geometry_msgs/Pose object_pose
+---
+bool success
+string message
+
+PickPlanResult result

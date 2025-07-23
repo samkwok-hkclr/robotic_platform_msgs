@@ -1,0 +1,3 @@
+uint8 IMAGE=1
+uint8 POINTCLOUD=2
+uint8 BOTH=3

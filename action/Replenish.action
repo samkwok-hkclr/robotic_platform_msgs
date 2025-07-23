@@ -1,0 +1,13 @@
+uint32 order_id
+
+int32 sku_id
+
+uint8 camera_id
+
+geometry_msgs/Pose object_pose
+---
+ReplenishQuantity[] info
+---
+bool running
+
+uint8 state

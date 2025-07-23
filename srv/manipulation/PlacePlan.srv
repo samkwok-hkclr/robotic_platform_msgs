@@ -1,0 +1,8 @@
+int32 sku_id
+
+geometry_msgs/Pose place_pose
+---
+bool success
+string message
+
+PlacePlanResult result

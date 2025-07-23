@@ -16,19 +16,24 @@ find_package(rosidl_default_generators REQUIRED)
 # Caution: Action files should be placed exclusively in the "action" folder.
 set(action_files
   "action/ScanSku.action"
+  "action/Replenish.action"
 )
 
 set(manipulation_msg_files
+  "msg/manipulation/PickPlanResult.msg"
+  "msg/manipulation/PlacePlanResult.msg"
   "msg/manipulation/ReplenishPose.msg"
   "msg/manipulation/ReplenishQuantity.msg"
   "msg/manipulation/RobotStatus.msg"
 )
 
 set(manipulation_srv_files
-
+  "srv/manipulation/PickPlan.srv"
+  "srv/manipulation/PlacePlan.srv"
 )
 
 set(vision_msg_files
+  "msg/vision/CameraDataType.msg"
   "msg/vision/DetectedObject.msg"
   "msg/vision/DetectionResult.msg"
   "msg/vision/LocalizationParam.msg"
