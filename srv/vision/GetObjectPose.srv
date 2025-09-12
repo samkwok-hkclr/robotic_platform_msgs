@@ -1,7 +1,7 @@
 std_msgs/Header header
 
 uint8 localization_algo_id
-int64 target_object_id
+int32 target_object_id
 int64[] candidate_objects_ids
 
 uint8 BIN_450_330_220 = 0

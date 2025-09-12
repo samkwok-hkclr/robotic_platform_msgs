@@ -3,6 +3,9 @@ builtin_interfaces/Time target_time
 uint8 camera_id
 
 uint8 type
+# IMAGE=1
+# POINTCLOUD=2
+# BOTH=3
 ---
 bool success
 string message

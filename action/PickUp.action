@@ -1,0 +1,17 @@
+uint32 order_id
+
+int32 sku_id
+
+uint8 camera_id
+
+RackInfo rack
+
+SkuDimension dimension
+
+TableInfo table
+---
+bool success
+string message
+---
+bool running
+uint8 state

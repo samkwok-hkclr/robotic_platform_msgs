@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 # Caution: Action files should be placed exclusively in the "action" folder.
 set(action_files
+  "action/PickUp.action"
   "action/ScanSku.action"
   "action/Replenish.action"
 )
@@ -22,9 +23,12 @@ set(action_files
 set(manipulation_msg_files
   "msg/manipulation/PickPlanResult.msg"
   "msg/manipulation/PlacePlanResult.msg"
+  "msg/manipulation/RackInfo.msg"
   "msg/manipulation/ReplenishPose.msg"
   "msg/manipulation/ReplenishQuantity.msg"
   "msg/manipulation/RobotStatus.msg"
+  "msg/manipulation/SkuDimension.msg"
+  "msg/manipulation/TableInfo.msg"
 )
 
 set(manipulation_srv_files
