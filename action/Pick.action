@@ -1,0 +1,11 @@
+uint32 order_id
+
+PickTask[] tasks
+
+---
+
+PickResult[] results
+
+---
+bool running
+uint8 state

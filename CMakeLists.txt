@@ -15,13 +15,25 @@ find_package(rosidl_default_generators REQUIRED)
 
 # Caution: Action files should be placed exclusively in the "action" folder.
 set(action_files
-  "action/PickUp.action"
+  "action/Pick.action"
+  "action/Place.action"
   "action/ScanSku.action"
   "action/Replenish.action"
 )
 
+set(common_msg_files
+  "msg/GripperStatus.msg"
+)
+
 set(manipulation_msg_files
   "msg/manipulation/PickPlanResult.msg"
+
+  "msg/manipulation/PickResult.msg"
+  "msg/manipulation/PickTask.msg"
+  
+  "msg/manipulation/PlaceResult.msg"
+  "msg/manipulation/PlaceTask.msg"
+
   "msg/manipulation/PlacePlanResult.msg"
   "msg/manipulation/RackInfo.msg"
   "msg/manipulation/ReplenishPose.msg"
@@ -29,6 +41,15 @@ set(manipulation_msg_files
   "msg/manipulation/RobotStatus.msg"
   "msg/manipulation/SkuDimension.msg"
   "msg/manipulation/TableInfo.msg"
+)
+
+set(common_srv_files
+  "srv/ControlGripper.srv"
+)
+
+set(elevation_srv_files
+  "srv/elevation/Elevate.srv"
+  "srv/elevation/Rotate.srv"
 )
 
 set(manipulation_srv_files
@@ -57,6 +78,11 @@ set(vision_srv_files
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
+
+  ${common_msg_files}
+  ${common_srv_files}
+
+  ${elevation_srv_files}
 
   ${manipulation_msg_files}
   ${manipulation_srv_files}

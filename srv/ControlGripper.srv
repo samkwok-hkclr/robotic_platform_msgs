@@ -1,0 +1,9 @@
+float32 position
+uint8 force
+
+# position: [0, 95.0]
+# force: [20, 100]
+
+---
+bool success
+string message

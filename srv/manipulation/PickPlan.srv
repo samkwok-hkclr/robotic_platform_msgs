@@ -1,4 +1,7 @@
 geometry_msgs/Pose object_pose
+
+RackInfo rack
+string flat_frame
 ---
 bool success
 string message

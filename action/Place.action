@@ -1,0 +1,11 @@
+uint32 order_id
+
+PlaceTask[] tasks
+
+---
+
+PlaceResult[] results
+
+---
+bool running
+uint8 state
