@@ -55,6 +55,8 @@ set(elevation_srv_files
 set(manipulation_srv_files
   "srv/manipulation/PickPlan.srv"
   "srv/manipulation/PlacePlan.srv"
+  "srv/manipulation/SimplePick.srv"
+  "srv/manipulation/SimplePlace.srv"
 )
 
 set(vision_msg_files

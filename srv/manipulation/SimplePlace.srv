@@ -1,0 +1,10 @@
+# this service for testing only
+
+bool enable_left
+geometry_msgs/Pose place_pose_left
+
+bool enable_right
+geometry_msgs/Pose place_pose_right
+---
+bool success
+string message
